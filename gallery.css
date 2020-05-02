@@ -1,0 +1,217 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box; /*removes bottom scroll bar*/
+    
+    
+}
+body{
+    overflow-x: hidden;
+    display:none
+}
+
+.header{
+    width:100vw;
+    height:60px;
+    
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    background:linear-gradient(to top, rgba(32, 52, 99, 0.699), rgb(66, 134, 244));
+    position: realtive
+
+}
+.naslov{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:30px;
+    text-transform:uppercase;
+    letter-spacing:100px;
+    font-weight: 300;
+    color:whitesmoke;
+    text-shadow:2px 2px 8px rgb(53, 4, 116)
+
+}
+.header .button{
+margin-left:0px;
+width:40px;
+height:40px;
+border-radius:50%;
+position:fixed;
+left:15px;
+background-image: url(Materijali/menu.png);
+background-size:cover;
+background-repeat: no-repeat;
+background-position: center;
+cursor:pointer;
+transition: 0.35s ease-out;
+position: absolute
+
+
+}
+.header .button:hover{
+   opacity:0.6;
+   transform: scale(1.1,1.1);
+   transition: 0.35s ease-out;
+}
+.header img{
+    position:fixed;
+    right:25px;
+    width:45px;
+    height:52px;
+    cursor:not-allowed;
+    position: absolute
+
+}
+.header img:hover{
+   transform:scale(1.1,1.1)
+
+}
+.toggle-menu{
+    display:block;
+    width: 70px;
+    height:100vh;
+    border-right:0.9px solid rgb(237, 227, 247);
+    position: relative;
+    background-color:rgb(247, 239, 239);
+    transition: 1.3s width
+
+}
+.slicica1{
+
+    height:70px;
+    cursor:pointer
+}
+.slicica1:hover{
+    opacity:0.8
+}
+.slicica1 img{
+    position: absolute;
+    transform:translateX(-50%);
+    left:35px;
+    padding-top:10px;
+    width:45px;
+    height:50px;
+    cursor:pointer;
+    transition: 0.35s ease-out;
+}
+.slicica1 img:hover{
+   opacity:0.25;
+   transition: 0.35s ease-out;
+
+}
+.toggle-menu1{
+        display:block;
+        width: 190px;
+        height:100vh;
+        border-right:0.9px solid rgb(237, 227, 247);
+        position: relative;
+        background-color:rgb(247, 239, 239);
+        transition:0.1s width  ;
+}
+.inline{
+    position:relative;
+    display: flex
+}
+.text1,
+.text2,
+.text3,
+.text4,
+.text5,
+.text6,
+.text7,
+.text8,
+.text9{
+position:absolute;
+left:80px;
+top:20px;
+font-size:18px;
+
+}
+.hide{
+    display:none;
+}
+.body-bar{
+    background:linear-gradient(to left, rgba(139, 96, 218, 0.822), rgb(46, 191, 145));
+    width:100vw;
+    border:1px solid rgb(172, 170, 170);
+    height:100vh;
+}
+.slika1{
+    grid-area:slika1;
+    width:457px;
+    height:200px;
+    cursor:pointer
+}
+.slika2{
+    grid-area:slika2;
+    width:220px;
+    height:200px;
+    cursor:pointer
+}
+.slika3{
+    grid-area:slika3;
+    width:220px;
+    height:200px;
+    cursor:pointer
+}
+.slika4{
+    grid-area:slika4;
+    width:230px;
+    height:428px;
+    cursor:pointer
+}
+.slika5{
+    grid-area:slika5;
+    width:auto;
+    height:200px;
+    cursor:pointer
+}
+.slika6{
+    grid-area:slika6;
+    width:auto;
+    height:200px;
+    cursor:pointer
+}
+.gallery{
+    position:relative;
+    margin-top:50px;
+    margin-left:144.5px;
+    display:grid;
+    width:1020px;
+    height:450px;
+    grid-gap:5px 10px;
+    grid-template-rows:"1000px 1000px";
+    grid-template-columns:"250px 250px 250px 250px";
+    grid-template-areas:"slika1 slika1 slika4 slika5"
+                        "slika2 slika3 slika4 slika6"
+}
+.slika1:hover,
+.slika2:hover,
+.slika3:hover,
+.slika4:hover,
+.slika5:hover,
+.slika6:hover{
+    opacity:0.7;
+    
+}
+.btn-prev{
+    width:70px;
+    height:35px;
+    border:1px solid black;
+    cursor:pointer;
+    background:linear-gradient(to right, rgb(237, 33, 58), rgb(147, 41, 30));
+    position:absolute;
+    top:250px;
+    left:200px
+    
+}
+.btn-next{
+    width:70px;
+    height:35px;
+    border:1px solid black;
+    cursor:pointer;
+    background:linear-gradient(to right, rgb(237, 33, 58), rgb(147, 41, 30));
+    position:absolute;
+    top:250px;
+    right:100px
+}

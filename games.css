@@ -1,0 +1,340 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box ;
+    
+
+/*removes bottom scroll bar*/
+}
+body{
+    overflow-x: hidden
+}
+.header{
+    width:100vw;
+    height:60px;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    background:linear-gradient(to top, rgba(32, 52, 99, 0.699), rgb(66, 134, 244));
+    position: realtive
+
+}
+.naslov{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:30px;
+    text-transform:uppercase;
+    letter-spacing:100px;
+    font-weight: 300;
+    color:whitesmoke;
+    text-shadow:2px 2px 8px rgb(53, 4, 116)
+
+}
+.header .button{
+margin-left:0px;
+width:40px;
+height:40px;
+border-radius:50%;
+position:fixed;
+left:15px;
+background-image: url(Materijali/menu.png);
+background-size:cover;
+background-repeat: no-repeat;
+background-position: center;
+cursor:pointer;
+transition: 0.35s ease-out;
+position: absolute
+
+
+}
+.header .button:hover{
+   opacity:0.6;
+   transform: scale(1.1,1.1);
+   transition: 0.35s ease-out;
+}
+.header img{
+    position:fixed;
+    right:25px;
+    width:45px;
+    height:52px;
+    cursor:not-allowed;
+    position: absolute
+
+}
+.header img:hover{
+   transform:scale(1.1,1.1)
+
+}
+.toggle-menu{
+    display:block;
+    width: 70px;
+    height:100vh;
+    border-right:0.9px solid rgb(237, 227, 247);
+    position: relative;
+    background-color:rgb(247, 239, 239);
+    transition: 1.3s width
+
+}
+.slicica1{
+
+    height:70px;
+    cursor:pointer
+}
+.slicica1:hover{
+    opacity:0.8
+}
+.slicica1 img{
+    position: absolute;
+    transform:translateX(-50%);
+    left:35px;
+    padding-top:10px;
+    width:45px;
+    height:50px;
+    cursor:pointer;
+    transition: 0.35s ease-out;
+}
+.slicica1 img:hover{
+   opacity:0.25;
+   transition: 0.35s ease-out;
+
+}
+.toggle-menu1{
+        display:block;
+        width: 190px;
+        height:100vh;
+        border-right:0.9px solid rgb(237, 227, 247);
+        position: relative;
+        background-color:rgb(247, 239, 239);
+        transition:0.1s width  ;
+}
+.inline{
+    position:relative;
+    display: flex
+}
+.text1,
+.text2,
+.text3,
+.text4,
+.text5,
+.text6,
+.text7,
+.text8,
+.text9{
+position:absolute;
+left:80px;
+top:20px;
+font-size:18px;
+
+}
+.hide{
+    display:none;
+}
+.body-bar{
+    background:linear-gradient(to top, rgba(139, 96, 218, 0.822), rgb(46, 191, 145));
+    width:100vw;
+    border:1px solid rgb(172, 170, 170);
+    height:100vh;
+    display:flex;
+    position: relative;
+}
+.iks-oks{
+   position: absolute;
+    width:641.6px;
+    height: 100vh;
+    border-right:1px solid black
+    
+}
+.iks-oks1{
+    position: absolute;
+     width:641.6px;
+     height: 100vh;
+     border-right:1px solid black;
+     background:black
+     
+ }
+.papir-kamen-makaze{
+    position: absolute;
+    left:641.6px;;
+    width:641.6px;
+    height: 100vh;  
+}
+.x,
+.o,
+.jedan,
+.tri,
+.pet{
+    position: absolute;
+    width:70px;
+    height:25px;
+    background:rgba(89, 53, 136, 0.623);
+    cursor:pointer;
+    margin-top:30px
+}
+.jedan{
+    left:107.25px
+}
+.pet{
+    right:107.25px
+}
+.tri{
+    left:284.25px
+}
+.x{
+    left:190px
+}
+.o{
+    right:190px
+}
+.x:hover,
+.o:hover,
+.jedan:hover,
+.tri:hover,
+.pet:hover{
+    opacity:0.65;
+    transform:scale(1.2,1.2)
+}
+.cell{
+    background-color:rgba(0, 139, 139, 0.274);
+    cursor:pointer;
+    width:100px;
+    height: 100px;
+    color:whitesmoke
+
+}
+.cell:hover{
+    opacity:0.35
+    
+}
+
+.cell1{
+grid-area:cell1;
+border-bottom:1.5px solid #006400;
+border-right:1.5px solid #006400;
+}
+.cell2{
+grid-area:cell2;
+border-bottom:1.5px solid #006400;
+border-right:1.5px solid #006400;
+}
+.cell3{
+grid-area:cell3;
+border-bottom:1.5px solid #006400;
+}
+.cell4{
+grid-area:cell4;
+border-bottom:1.5px solid #006400;
+border-right:1.5px solid #006400
+}
+.cell5{
+grid-area:cell5;
+border-bottom:1.5px solid #006400;
+border-right:1.5px solid #006400
+}
+.cell6{
+grid-area:cell6;
+border-bottom:1.5px solid #006400;
+}
+.cell7{
+grid-area:cell7;
+border-right:1.5px solid #006400
+}
+.cell8{
+ grid-area:cell8;
+ border-right:1.5px solid #006400
+    }
+.cell9{
+ grid-area:cell9
+ }
+ .tic-tac-toe{
+    position:absolute;
+    left:170.4px;
+    top:235px;
+    width:300px;
+    height:300px;
+    outline:4px solid rgb(245, 12, 12);
+    display:grid;
+    grid-template-rows:"100px 100px 100px";
+    grid-template-columns:"100px 100px 100px";
+    grid-template-areas:"cell1 cell2 cell3"
+                        "cell4 cell5 cell6"
+                        "cell7 cell8 cell9"
+}
+.player-score,
+.computer-score{
+    font-size:20px;
+    background:rgba(0, 0, 163, 0.692);
+    text-align:center;
+    margin-left:30px;
+    position: absolute;
+    top:220px;
+    width:100px;
+    height:70px;
+    border:5px solid rgba(255, 0, 0, 0.712);
+    color:white;
+    border-radius:7px;
+    line-height: 26px;
+}
+.computer-score{
+    background:rgba(0, 0, 163, 0.692);
+    right:0;
+    margin-right:30px;
+    border:5px solid rgba(255, 0, 0, 0.712);
+}
+
+.box1,
+.box2{
+    position: absolute;
+    width:200px;
+    height:250px;
+    
+    top:330px;
+    left:30px
+
+}
+.box2{
+    left:420px;
+  
+}
+.versus{
+    font-size:70px;
+    text-align:center;
+    padding-top:300px;
+    color:red
+}
+.porukica{
+    position:absolute;
+    width:230px;
+    height:37px;
+    left:215px;
+    top:230px;
+    border-radius:4px;
+    text-align:center;
+    font-size:20px;
+    padding-top:5px;
+    background-color:rgb(0, 211, 0);
+    color:white;
+    font-weight: 450;
+  
+}
+.slika1,
+.slika2,
+.slika3{
+    left:10px;
+    width:70px;
+    height:70px;
+    position: absolute;
+    top:570px;
+    cursor:pointer;
+    transition:0.5s ease-in-out
+}
+.slika2{
+    left:100px
+}
+.slika3{
+    left:190px
+}
+.slika1:hover,
+.slika2:hover,
+.slika3:hover{
+    transition:0.5s  ease-in-out;
+    opacity:0.3
+}

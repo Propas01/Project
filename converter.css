@@ -1,0 +1,234 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box /*removes bottom scroll bar*/
+}
+body{
+    overflow-x: hidden;
+    
+}
+
+.header{
+    width:100vw;
+    height:60px;
+    
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    background:linear-gradient(to top, rgba(32, 52, 99, 0.699), rgb(66, 134, 244));
+    position: realtive
+
+}
+.naslov{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:30px;
+    text-transform:uppercase;
+    letter-spacing:100px;
+    font-weight: 300;
+    color:whitesmoke;
+    text-shadow:2px 2px 8px rgb(53, 4, 116)
+
+}
+.header .button{
+margin-left:0px;
+width:40px;
+height:40px;
+border-radius:50%;
+position:fixed;
+left:15px;
+background-image: url(Materijali/menu.png);
+background-size:cover;
+background-repeat: no-repeat;
+background-position: center;
+cursor:pointer;
+transition: 0.35s ease-out;
+position: absolute
+
+
+}
+.header .button:hover{
+   opacity:0.6;
+   transform: scale(1.1,1.1);
+   transition: 0.35s ease-out;
+}
+.header img{
+    position:fixed;
+    right:25px;
+    width:45px;
+    height:52px;
+    cursor:not-allowed;
+    position: absolute
+
+}
+.header img:hover{
+   transform:scale(1.1,1.1)
+
+}
+.toggle-menu{
+    display:block;
+    width: 70px;
+    height:100vh;
+    border-right:0.9px solid rgb(237, 227, 247);
+    position: relative;
+    background-color:rgb(247, 239, 239);
+    transition: 1.3s width
+
+}
+.slicica1{
+
+    height:70px;
+    cursor:pointer
+}
+.slicica1:hover{
+    opacity:0.8
+}
+.slicica1 img{
+    position: absolute;
+    transform:translateX(-50%);
+    left:35px;
+    padding-top:10px;
+    width:45px;
+    height:50px;
+    cursor:pointer;
+    transition: 0.35s ease-out;
+}
+.slicica1 img:hover{
+   opacity:0.25;
+   transition: 0.35s ease-out;
+
+}
+.toggle-menu1{
+        display:block;
+        width: 190px;
+        height:100vh;
+        border-right:0.9px solid rgb(237, 227, 247);
+        position: relative;
+        background-color:rgb(247, 239, 239);
+        transition:0.1s width ;
+        z-index:100
+}
+.inline{
+    position:relative;
+    display: flex
+}
+.text1,
+.text2,
+.text3,
+.text4,
+.text5,
+.text6,
+.text7,
+.text8,
+.text9{
+position:absolute;
+left:70px;
+top:20px;
+font-size:18px;
+
+}
+.hide{
+    display:none;
+}
+.body-bar{
+    background:linear-gradient(to bottom, rgba(139, 96, 218, 0.822), rgb(46, 191, 145));
+    width:100vw;
+    border:1px solid rgb(172, 170, 170);
+    height:100vh;
+}
+.pre-convert{
+    position:absolute;
+    margin-left:50px;
+    margin-top:10px;
+    font-size:20px;
+    
+}
+.convert{
+    width:230px;
+    height:600px;
+    
+    border-radius:10px;
+    position:relative;
+    top:50px;
+    left:45px;
+    display:block
+}
+.tekst{
+    width:230px;
+    height:180px;
+    resize:none;
+  
+}
+.dugme{
+    width:100px;
+    height:30px;
+    background:rgb(4, 201, 37);
+    cursor:pointer;
+    position:relative;
+    top:-350px;
+    left:285px
+}
+.dugme:hover{
+   opacity:0.7
+}
+.prevod{
+    width:230px;
+    height:400px;
+    background:rgb(219, 13, 47);
+    color:black;
+    resize:none
+
+}
+.input{
+    width:500px;
+    height:200px;
+    position:absolute;
+    top:50px;
+    left:600px;
+    resize:none;
+    box-shadow:0px 0px 8px 2px whitesmoke;
+    font-size:18px
+}
+#options{
+position: absolute;
+left:800px;
+top:330px;
+cursor:pointer;
+box-shadow:0px 0px 8px 4px rgb(148, 0, 143)
+}
+.output{
+    width:500px;
+    height:200px;
+    position:absolute;
+    top:420px;
+    left:600px;
+    resize:none;
+    box-shadow:0px 0px 8px 0px whitesmoke;
+    font-size:18px
+}
+.style{
+    position: relative;
+    top:-610px;
+    display:flex;
+    width:500px;
+    left:532px;
+    height:20px;
+    background: rgba(0, 255, 242, 0.808);
+    color:white;
+    align-items:center;
+    box-shadow:0 0 6px 2px;
+    cursor:pointer
+}
+.style-type{
+    flex-grow:1;
+    border-right: 2px solid rgba(30, 0, 163, 0.733);
+    text-align:center
+}
+.style-type:first-child{
+    
+    border-left:2px solid rgba(30, 0, 163, 0.733);
+    
+}
+.style-type:hover{
+    transform:scale(1.1,1.1);
+
+}

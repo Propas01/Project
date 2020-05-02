@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>PROPAS</title>
+<link href="quiz.css"rel="stylesheet">
+<link href="Materijali/ikonica.png" rel="shortcut icon">
+</head>
+<body >
+
+    <header>
+        <div class="header">
+        <div onclick="toggleMenu()" class="button" ></div>
+        <p  class="naslov">propas</p>
+        <img  title="Don't hover me pussy" src="Materijali/robotic.png" alt="Robotic">
+        </div>
+    </header>
+<div id="home-page" class="inline">
+    <div class="toggle-menu">
+
+        <a style="color:black" href="index.html">
+        <div  class="slicica1">
+        <div class="inline">
+        <img title="Home page" id="slika1" src="Materijali/1.png" alt="kucica">
+        <p class="text1 hide">Home</p>
+        </div>
+       </div>
+       </a>
+
+        <a style="color:black"  href="games.html" >
+        <div class="slicica1">
+            <div class="inline">
+            <img title="Games" id="slika1" src="Materijali/2.png" alt="games">
+            <p class="text2 hide">Games</p>
+        </div>
+        </div>
+        </a>
+
+        <a href="quiz.html" style="color:black">
+        <div class="slicica1">
+            <div class="inline">
+            <img title="Quiz" id="slika1" src="Materijali/3.png"
+            alt="qiuz">
+            <p class="text3 hide">Quizzes</p>
+        </div>
+        </div>
+        </a>
+
+        <a  href="clock.html" style="color:black">
+        <div class="slicica1">
+            <div class="inline">
+            <img title="Clock" id="slika1" src="Materijali/4.png" alt="clock">
+            <p class="text4 hide">Clock</p>
+            </div>
+         </div>
+        </a>
+
+         <a  href="calc.html" style="color:black">
+         <div  class="slicica1">
+            <div class="inline">
+            <img title="Calculator" id="slika1" src="Materijali/5.png">
+            <p class="text5 hide">Calculator</p>
+            </div>
+         </div>
+        </a>
+
+        <a href="converter.html" style="color:black">
+        <div class="slicica1">
+            <div class="inline">
+             <img title="Converter" id="slika1" src="Materijali/6.png">
+             <p class="text6 hide">Counter</p>
+             </div>
+        </div>
+        </a>
+
+        <a href="gallery.html" style="color:black">
+        <div class="slicica1">
+            <div class="inline">
+            <img title="Gallery" id="slika1" src="Materijali/7.png">
+            <p class="text7 hide">Gallery</p>
+            </div>
+        </div>
+        </a>
+
+        <a style="color:black">
+        <div class="slicica1">
+            <div class="inline">
+            <img title="Gallery" id="slika1" src="Materijali/7.png">
+            <p class="text8 hide">Gallery</p>
+            </div>
+        </div>
+        </a>
+
+        <a style="color:black">
+        <div class="slicica1">
+            <div class="inline">
+            <img title="Gallery" id="slika1" src="Materijali/7.png">
+            <p class="text9 hide">Gallery</p>
+            </div>
+            </div>
+        </div>
+        </a>
+
+    <div id="body-bar" class="body-bar">
+        <h2 class="podnaslov">QUIZ</h2>
+     <div class="pre-quiz">
+     <p class="p1">OD:</p>
+     <div class="div1"></div>
+     <input onchange="vrednost1()" class="range1" type="range" min="1" max="1000" value="1">
+     <p class="p2" >DO:</p>
+     <div class="div2"></div>
+     <input onchange="vrednost2()" class="range2" type="range" min="1" max="1000" value="1">
+     <p class="p3">VREME:</p>
+     <div class="div3"></div>
+     <input onchange="vrednost3()" class="range3" type="range" min="10" max="30" value="20">
+     <p class="p4" style="text-align:center">Izaberi operaciju:</p>
+     <select style="position:absolute;left:200px;margin-top:10px">
+         <option value="+">Sabiranje</option>
+         
+         <option value="-">Oduzimanje</option>
+     </select>
+     <button onclick="pocni()" class="pocni" type="button">Pocni</button>
+     
+     <div class="timer"></div>
+     <div class="poeni"></div>
+     <div class="izracunaj"></div>
+     <input type="number" class="upisi">
+     
+
+     </div>
+
+    </div>
+<script src="quiz.js"></script>
+</body>
+
+</html>

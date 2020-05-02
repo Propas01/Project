@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>PROPAS</title>
+<link href="games.css"rel="stylesheet">
+<link href="Materijali/ikonica.png" rel="shortcut icon">
+</head>
+<body >
+
+    <header>
+        <div class="header">
+        <div onclick="toggleMenu()" class="button" ></div>
+        <p  class="naslov">propas</p>
+        <img  title="Don't hover me pussy" src="Materijali/robotic.png" alt="Robotic">
+        </div>
+    </header>
+<div id="home-page" class="inline">
+    <div class="toggle-menu">
+
+        <a style="color:black" href="index.html">
+        <div  class="slicica1">
+        <div class="inline">
+        <img title="Home page" id="slika1" src="Materijali/1.png" alt="kucica">
+        <p class="text1 hide">Home</p>
+        </div>
+       </div>
+       </a>
+
+        <a  >
+        <div href="games.html" style="color:black" class="slicica1">
+            <div class="inline">
+            <img title="Games" id="slika1" src="Materijali/2.png" alt="games">
+            <p class="text2 hide">Games</p>
+        </div>
+        </div>
+        </a>
+
+        <a href="quiz.html" style="color:black">
+        <div class="slicica1">
+            <div class="inline">
+            <img title="Quiz" id="slika1" src="Materijali/3.png"
+            alt="qiuz">
+            <p class="text3 hide">Quizzes</p>
+        </div>
+        </div>
+        </a>
+
+        <a  href="clock.html" style="color:black">
+        <div class="slicica1">
+            <div class="inline">
+            <img title="Clock" id="slika1" src="Materijali/4.png" alt="clock">
+            <p class="text4 hide">Clock</p>
+            </div>
+         </div>
+        </a>
+
+         <a href="calc.html" style="color:black">
+         <div  class="slicica1">
+            <div class="inline">
+            <img title="Calculator" id="slika1" src="Materijali/5.png">
+            <p class="text5 hide">Calculator</p>
+            </div>
+         </div>
+        </a>
+
+        <a  href="converter.html" style="color:black">
+        <div class="slicica1">
+            <div class="inline">
+             <img title="Converter" id="slika1" src="Materijali/6.png">
+             <p class="text6 hide">Counter</p>
+             </div>
+        </div>
+        </a>
+
+        <a href="gallery.html" style="color:black">
+        <div class="slicica1">
+            <div class="inline">
+            <img title="Gallery" id="slika1" src="Materijali/7.png">
+            <p class="text7 hide">Gallery</p>
+            </div>
+        </div>
+        </a>
+
+        <a style="color:black">
+        <div class="slicica1">
+            <div class="inline">
+            <img title="Gallery" id="slika1" src="Materijali/7.png">
+            <p class="text8 hide">Gallery</p>
+            </div>
+        </div>
+        </a>
+
+        <a style="color:black">
+        <div class="slicica1">
+            <div class="inline">
+            <img title="Gallery" id="slika1" src="Materijali/7.png">
+            <p class="text9 hide">Gallery</p>
+            </div>
+            </div>
+        </div>
+        </a>
+    
+        <div class="body-bar">
+         <div class="iks-oks">
+            <h2 class="h2" style="color:rgba(11, 95, 250, 0.61);font-size:40px;text-align:center;padding-top:35px;font-family:Lucida Console, Courier, monospace">TIC TAC TOE</h2>
+
+           <h3 class="h3" style="padding-top:30px;text-align:center;
+          color:rgba(137, 43, 226, 0.596)">First to play:</h3>
+           
+           <button onclick="pritisniDugme('X')" type="button" class="x">X</button>
+
+           <button onclick="pritisniDugme('O')" type="button" class="o">O</button>
+         
+           <div class="tic-tac-toe">
+            <div class="cell cell1" onclick="play('0')"></div>
+            <div class="cell cell2" onclick="play('1')"></div>
+            <div class="cell cell3" onclick="play('2')"></div>
+            <div class="cell cell4" onclick="play('3')"></div>
+            <div class="cell cell5" onclick="play('4')"></div>
+            <div class="cell cell6" onclick="play('5')"></div>
+            <div class="cell cell7" onclick="play('6')"></div>
+            <div class="cell cell8" onclick="play('7')"></div>
+            <div class="cell cell9" onclick="play('8')"></div>
+           </div>
+           <button id="ono-moje" style="position:absolute;top:140px;right:30px;color:white;width:50px;
+           height:50px;border-radius:50%;
+           background: rgba(76, 7, 238, 0.548);cursor:pointer " type="button">Refresh</button>
+
+         <div style="display:none;font-size:40px;position:absolute;left:40%;top:45%;color:white" class="poruka"></div>
+
+         <button  onclick="reset()" style="display:none;font-size:20px;background-color:red;color:white;position:absolute;left:48%;top:55%;width:90px;height:40px;
+         border-radius:4px;cursor:pointer" class="dugme" type="button">Refresh</button>
+
+         </div>
+
+         <div class="papir-kamen-makaze">
+            <h2  style="color:rgba(11, 95, 250, 0.61);font-size:40px;text-align:center;padding-top:35px;font-family:Lucida Console, Courier, monospace">PAPER-ROCK-SCISSORS</h2>
+            <p style="color:blueviolet;padding-left:10px;font-size:20px;padding-top:20px">Number of rounds</p>
+            <select style="cursor:pointer;
+            margin-left:65px;
+            margin-top:10px">
+                <option value="1">1</option>
+                <option value="3">3</option>
+                <option value="5">5</option>
+                <option value="infinity">Infinity</option>
+            </select>
+            <div class="player-score">Player:</div>
+            
+            <div class="computer-score">Copmuter:</div>
+
+            <button id="ono-moje1" style="position:absolute;top:140px;right:290px;color:white;width:50px;
+           height:50px;border-radius:50%;
+           background: rgba(76, 7, 238, 0.548);cursor:pointer " type="button">Refresh</button>
+           
+           <div class="porukica"></div>
+
+           <div class="box1"></div>
+           <div class="box2"></div>
+
+           <p class="versus">VS</p>
+
+           <img onclick="pritisniDugmence(1)" class="slika1" src="Materijali/paper-icon.png">
+           <img onclick="pritisniDugmence(2)" class="slika2" src="Materijali/rock-icon.png">
+           <img onclick="pritisniDugmence(3)" class="slika3" src="Materijali/scissors-icon.png">
+         </div>
+
+        </div>
+
+
+        <script src="games.js"></script>
+    </body>
+    
+    </html>

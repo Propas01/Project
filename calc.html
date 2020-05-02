@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>PROPAS</title>
+<link href="calc.css"rel="stylesheet">
+<link href="Materijali/ikonica.png" rel="shortcut icon">
+</head>
+<body >
+
+    <header>
+        <div class="header">
+        <div onclick="toggleMenu()" class="button" ></div>
+        <p  class="naslov">propas</p>
+        <img  title="Don't hover me pussy" src="Materijali/robotic.png" alt="Robotic">
+        </div>
+    </header>
+<div id="home-page" class="inline">
+    <div class="toggle-menu">
+
+        <a style="color:black" href="index.html">
+        <div  class="slicica1">
+        <div class="inline">
+        <img title="Home page" id="slika1" src="Materijali/1.png" alt="kucica">
+        <p class="text1 hide">Home</p>
+        </div>
+       </div>
+       </a>
+
+        <a href="games.html" style="color:black">
+        <div class="slicica1">
+            <div class="inline">
+            <img title="Games" id="slika1" src="Materijali/2.png" alt="games">
+            <p class="text2 hide">Games</p>
+        </div>
+        </div>
+        </a>
+
+        <a href="quiz.html" style="color:black">
+        <div class="slicica1">
+            <div class="inline">
+            <img title="Quiz" id="slika1" src="Materijali/3.png"
+            alt="qiuz">
+            <p class="text3 hide">Quizzes</p>
+        </div>
+        </div>
+        </a>
+
+        <a href="clock.html" style="color:black">
+        <div class="slicica1">
+            <div class="inline">
+            <img title="Clock" id="slika1" src="Materijali/4.png" alt="clock">
+            <p class="text4 hide">Clock</p>
+            </div>
+         </div>
+        </a>
+
+         <a style="color:black">
+         <div class="slicica1">
+            <div class="inline">
+            <img title="Calculator" id="slika1" src="Materijali/5.png">
+            <p class="text5 hide">Calculator</p>
+            </div>
+         </div>
+        </a>
+
+        <a href="converter.html" style="color:black">
+        <div class="slicica1">
+            <div class="inline">
+             <img title="Converter" id="slika1" src="Materijali/6.png">
+             <p class="text6 hide">Counter</p>
+             </div>
+        </div>
+        </a>
+
+        <a href="gallery.html" style="color:black">
+        <div class="slicica1">
+            <div class="inline">
+            <img title="Gallery" id="slika1" src="Materijali/7.png">
+            <p class="text7 hide">Gallery</p>
+            </div>
+        </div>
+        </a>
+
+        <a style="color:black">
+        <div class="slicica1">
+            <div class="inline">
+            <img title="Gallery" id="slika1" src="Materijali/7.png">
+            <p class="text8 hide">Gallery</p>
+            </div>
+        </div>
+        </a>
+
+        <a style="color:black">
+        <div class="slicica1">
+            <div class="inline">
+            <img title="Gallery" id="slika1" src="Materijali/7.png">
+            <p class="text9 hide">Gallery</p>
+            </div>
+            </div>
+        </div>
+        </a>
+        <div class="body-bar">
+            <form name="form">
+               <input placeholder="Insert" id="value"   class="text_1"  name="textview">
+            </form>  
+            <div class="calculator">
+            <div class=" cell cell1" onclick="clean()" >C</div>
+            <div class=" cell cell2" onclick="backspace()" ><</div>
+            <div class="symbol  cell cell3" >/</div>
+            <div class="symbol cell cell4">*</div>
+            <div class="number cell cell5">7</div>
+            <div class="number cell cell6">8</div>
+            <div class="number cell cell7">9</div>
+            <div class="symbol cell cell8">-</div>
+            <div class="number cell cell9">4</div>
+            <div class="number cell cell10">5</div>
+            <div class="number cell cell11">6</div>
+            <div class="symbol cell cell12">+</div>
+            <div class="number cell cell13">1</div>
+            <div class="number cell cell14">2</div>
+            <div class="number cell cell15">3</div>
+            <div class=" cell cell16" onclick="jednako()">=</div>
+            <div class="number cell cell17">0</div>
+            <div class="symbol cell cell18">.</div>
+            </div>
+
+            <div  style="display:none" class="calculator1">
+            <div class="cell0 cell01" onclick="abs()">abs</div>
+            <div class="number cell0 cell02" >(</div>
+            <div class="number cell0 cell03" >)</div>
+            <div class="cell0 cell04" onclick="sinus()">sin</div>
+            <div class="cell0 cell05" onclick="kosinus()">cos</div>
+            <div class="cell0 cell06" onclick="tangens()">tg</div>
+            <div class="cell0 cell07" onclick="kotangens()">ctg</div>
+            <div class="cell0 cell08" onclick="stepen()">x^2</div>
+            <div class="cell0 cell09" onclick="koren()">√</div>
+            <div class="cell0 cell010" onclick="e()">e</div>
+            <div class="cell0 cell011" onclick="pi()">π</div>
+            <div class="cell0 cell012" onclick="logaritam()">log</div>
+            </div>
+
+
+
+            <div onclick="promeniCalc()" class="button1" type"button"><span class="span">+</span></div>
+
+
+            
+        </div>
+
+        </div>
+        <script src="calc.js"></script>
+    </body>
+
+    </html>

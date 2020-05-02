@@ -1,0 +1,370 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box /*removes bottom scroll bar*/
+}
+body{
+    overflow-x: hidden
+}
+
+.header{
+    width:100vw;
+    height:60px;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    background:linear-gradient(to top, rgba(32, 52, 99, 0.699), rgb(66, 134, 244));
+    position: realtive
+
+}
+.naslov{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:30px;
+    text-transform:uppercase;
+    letter-spacing:100px;
+    font-weight: 300;
+    color:whitesmoke;
+    text-shadow:2px 2px 8px rgb(53, 4, 116)
+
+}
+.header .button{
+margin-left:0px;
+width:40px;
+height:40px;
+border-radius:50%;
+position:fixed;
+left:15px;
+background-image: url(Materijali/menu.png);
+background-size:cover;
+background-repeat: no-repeat;
+background-position: center;
+cursor:pointer;
+transition: 0.35s ease-out;
+position: absolute
+
+
+}
+.header .button:hover{
+   opacity:0.6;
+   transform: scale(1.1,1.1);
+   transition: 0.35s ease-out;
+}
+.header img{
+    position:fixed;
+    right:25px;
+    width:45px;
+    height:52px;
+    cursor:not-allowed;
+    position: absolute
+
+}
+.header img:hover{
+   transform:scale(1.1,1.1)
+
+}
+.toggle-menu{
+    display:block;
+    width: 70px;
+    height:100vh;
+    border-right:0.9px solid rgb(237, 227, 247);
+    position: relative;
+    background-color:rgb(247, 239, 239);
+    transition: 1.3s width
+
+}
+.slicica1{
+
+    height:70px;
+    cursor:pointer
+}
+.slicica1:hover{
+    opacity:0.8
+}
+.slicica1 img{
+    position: absolute;
+    transform:translateX(-50%);
+    left:35px;
+    padding-top:10px;
+    width:45px;
+    height:50px;
+    cursor:pointer;
+    transition: 0.35s ease-out;
+}
+.slicica1 img:hover{
+   opacity:0.25;
+   transition: 0.35s ease-out;
+
+}
+.toggle-menu1{
+        display:block;
+        width: 190px;
+        height:100vh;
+        border-right:0.9px solid rgb(237, 227, 247);
+        position: relative;
+        background-color:rgb(247, 239, 239);
+        transition:0.1s width ;
+        z-index:100
+}
+.inline{
+    position:relative;
+    display: flex
+}
+.text1,
+.text2,
+.text3,
+.text4,
+.text5,
+.text6,
+.text7,
+.text8,
+.text9{
+position:absolute;
+left:70px;
+top:20px;
+font-size:18px;
+
+}
+.hide{
+    display:none;
+}
+.body-bar{
+  background:linear-gradient(to bottom, rgba(139, 96, 218, 0.822), rgb(46, 191, 145));
+    width:100vw;
+    border:1px solid rgb(172, 170, 170);
+    height:100vh;
+}
+.clock {
+    width: 500px;
+    height: 500px;
+    background-color: rgba(255, 255, 255, .8);
+    border-radius: 50%;
+    border: 4px solid rgb(255, 251, 0);
+    position: relative;
+    left:90px;
+    top:50px
+  }
+  
+  .clock .number {
+    --rotation: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transform: rotate(var(--rotation));
+    font-size: 1.5rem;
+  }
+  
+  .clock .number1 { --rotation: 30deg; }
+  .clock .number2 { --rotation: 60deg; }
+  .clock .number3 { --rotation: 90deg; }
+  .clock .number4 { --rotation: 120deg; }
+  .clock .number5 { --rotation: 150deg; }
+  .clock .number6 { --rotation: 180deg; }
+  .clock .number7 { --rotation: 210deg; }
+  .clock .number8 { --rotation: 240deg; }
+  .clock .number9 { --rotation: 270deg; }
+  .clock .number10 { --rotation: 300deg; }
+  .clock .number11 { --rotation: 330deg; }
+  
+  .clock .hand {
+    --rotation:0;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    border: 1px solid white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transform-origin: bottom;
+    z-index: 10;
+    transform: translateX(-50%) rotate(calc(var(--rotation) * 1deg));
+  }
+  
+  .clock::after {
+    content: '';
+    position: absolute;
+    background-color: rgb(255, 0, 157);
+    z-index: 11;
+    width: 15px;
+    height: 15px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+  }
+  
+  .clock .hand.second {
+    width: 3px;
+    height: 45%;
+    background-color: red;
+  }
+  
+  .clock .hand.minute {
+    width: 7px;
+    height: 40%;
+    background-color: rgb(0, 255, 34);
+  }
+  
+  .clock .hand.hour {
+    width: 10px;
+    height: 35%;
+    background-color: rgb(0, 132, 255);
+  }
+
+  .digital-clock{
+    width:500px;
+    height:100px;
+    position: relative;
+    
+    top:-450px;
+    left:700px;
+    border-radius:20px;
+    display:flex;
+    background:rgba(0, 0, 0, 0.726)
+  }
+.sat,
+.minut,
+.sekund{
+width:166,67;
+position: absolute;
+padding-left:30px;
+padding-right:30px;
+font-size:90px;
+color:rgb(0, 255, 0);
+flex-grow:1
+
+
+}
+.sekund{
+ left:70%
+  
+}
+.minut{
+  left:35%
+   
+ }
+
+.stoperica{
+  width:300px;
+  height:150px;
+  border-radius:10px;
+  background:rgba(38, 0, 255, 0.685);
+  position:relative;
+  top:-400px;
+  left:800px
+}
+.stoperica p{
+  font-size:30px;
+  text-align:center;
+  padding-top:5px;
+  color:white
+}
+.stop{
+  width:100px;
+  height:35px;
+  border-radius:4px;
+  position:absolute;
+  cursor:pointer;
+  left:33.5%;
+  bottom:10px;
+  background:rgb(0, 128, 11)
+}
+
+.time{
+  color:white;
+  font-size:24px;
+  
+  padding-top:20px;
+  display:flex;
+  justify-content:center
+}
+.stop1{
+  width:50px;
+  height:25px;
+  position:absolute;
+  right:30px;
+  background-color:rgba(228, 5, 5, 0.863);
+  cursor:pointer
+}
+.stop2{
+  width:50px;
+  height:25px;
+  position:absolute;
+  left:30px;
+  background-color:rgba(228, 5, 5, 0.863);
+  cursor:pointer
+}
+.stop1:hover{
+opacity:0.7
+}
+.stop2:hover{
+  opacity:0.7
+}
+.stop11{
+  width:100px;
+  height:35px;
+  border-radius:4px;
+  position:absolute;
+  cursor:pointer;
+  left:33.5%;
+  bottom:10px;
+  background:rgb(0, 128, 11);
+  display:none
+}
+.brojac{
+  position:relative;
+  width:300px;
+  height:150px;
+  
+  border-radius:10px;
+  top:-380px;
+  left:800px;
+  background:rgba(38, 0, 255, 0.685);
+}
+.brojac p{
+  color:white;
+  font-size:30px;
+  text-align:center;
+  padding-top:5px
+}
+fieldset{
+  margin-right:20px;
+
+}
+select{
+  cursor:pointer
+}
+.btn-start,
+.btn-stop{
+  width:100px;
+  height:30px;
+  background:green;
+  border-radius:5px;
+  position:absolute;
+  bottom:10px;
+  left:100px;
+  cursor:pointer
+}
+.btn-stop{
+  display:none
+}
+.vreme{
+  display:none;
+  color:white;
+  font-size:30px;
+  position:absolute;
+  left:100px;
+  top:50px;
+  
+}
+
+.btn-clear{
+  width:50px;
+  height:25px;
+  position:absolute;
+  left:30px;
+  bottom:30px;
+  background-color:rgba(228, 5, 5, 0.863);
+  cursor:pointer;
+  display:none
+  
+}

@@ -1,0 +1,244 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box /*removes bottom scroll bar*/
+}
+body{
+    overflow-x: hidden
+}
+
+.header{
+    width:100vw;
+    height:60px;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    background:linear-gradient(to top, rgba(32, 52, 99, 0.699), rgb(66, 134, 244));
+    position: realtive
+
+}
+.naslov{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:30px;
+    text-transform:uppercase;
+    letter-spacing:100px;
+    font-weight: 300;
+    color:whitesmoke;
+    text-shadow:2px 2px 8px rgb(53, 4, 116)
+
+}
+.header .button{
+margin-left:0px;
+width:40px;
+height:40px;
+border-radius:50%;
+position:fixed;
+left:15px;
+background-image: url(Materijali/menu.png);
+background-size:cover;
+background-repeat: no-repeat;
+background-position: center;
+cursor:pointer;
+transition: 0.35s ease-out;
+position: absolute
+
+
+}
+.header .button:hover{
+   opacity:0.6;
+   transform: scale(1.1,1.1);
+   transition: 0.35s ease-out;
+}
+.header img{
+    position:fixed;
+    right:25px;
+    width:45px;
+    height:52px;
+    cursor:not-allowed;
+    position: absolute
+
+}
+.header img:hover{
+   transform:scale(1.1,1.1)
+
+}
+.toggle-menu{
+    display:block;
+    width: 70px;
+    height:100vh;
+    border-right:0.9px solid rgb(237, 227, 247);
+    position: relative;
+    background-color:rgb(247, 239, 239);
+    transition: 1.3s width
+
+}
+.slicica1{
+
+    height:70px;
+    cursor:pointer
+}
+.slicica1:hover{
+    opacity:0.8
+}
+.slicica1 img{
+    position: absolute;
+    transform:translateX(-50%);
+    left:35px;
+    padding-top:10px;
+    width:45px;
+    height:50px;
+    cursor:pointer;
+    transition: 0.35s ease-out;
+}
+.slicica1 img:hover{
+   opacity:0.25;
+   transition: 0.35s ease-out;
+
+}
+.toggle-menu1{
+        display:block;
+        width: 190px;
+        height:100vh;
+        border-right:0.9px solid rgb(237, 227, 247);
+        position: relative;
+        background-color:rgb(247, 239, 239);
+        transition:0.1s width ;
+        z-index:100
+}
+.inline{
+    position:relative;
+    display: flex
+}
+.text1,
+.text2,
+.text3,
+.text4,
+.text5,
+.text6,
+.text7,
+.text8,
+.text9{
+position:absolute;
+left:70px;
+top:20px;
+font-size:18px;
+
+}
+.hide{
+    display:none;
+}
+.body-bar{
+    background:linear-gradient(to right, rgb(127, 0, 255), rgb(225, 0, 255));;
+    width:100vw;
+    border:1px solid rgb(172, 170, 170);
+    height:100vh;
+}
+.pre-quiz{
+    position: absolute;
+    width:500px;
+    height:350px;
+    border-radius:20px;
+    background:linear-gradient(to right, rgb(102, 125, 182), rgb(0, 130, 200), rgb(0, 130, 200), rgb(102, 125, 182));
+    transform:translateX(75%)  translateY(40%)
+}
+.podnaslov{
+    color:white;
+    font-size:30px;
+    position: relative;
+    top:70px;
+    left:47%
+    
+}
+
+.range1{
+    width:40%;
+    margin-left:30%;
+    cursor: pointer;
+}
+.range2{
+    width:40%;
+    margin-left:30%;
+    cursor: pointer;
+
+}
+.range3{
+    width:40%;
+    margin-left:30%;
+    cursor: pointer;
+}
+
+.body-bar p{
+color:rgb(0, 255, 21);
+font-size:18px;
+padding-top:8px;
+padding-left:8px
+}
+select{
+    margin-left:8px;
+    cursor: pointer;
+}
+.range1:hover,
+.range2:hover,
+.range3:hover{
+    opacity:0.85
+}
+.div1,
+.div2,
+.div3{
+    color:white;
+    padding-left:8px
+}
+.pocni{
+    width:100px;
+    height:30px;
+    position:absolute;
+    bottom:10px;
+    left:207px;
+    cursor:pointer;
+    background:red;
+    color:white
+}
+.pocni:hover{
+  opacity:0.7
+}
+.izracunaj{
+    text-align:center;
+    width:150px;
+    height:30px;
+    font-size:20px;
+    padding-top:3px;
+    background:white;
+    border-radius:5px;
+    position: absolute;
+    top:120px;
+    left:70px;
+    display:none;
+    color:red;
+    
+}
+.upisi{
+    width:150px;
+    height:30px;
+    background:white;
+    border-radius:5px;
+    position: absolute;
+    top:120px;
+    right:70px;
+    display:none;
+}
+.timer{
+    font-size:20px;
+    position: absolute;
+    top:30px;
+    display:none;
+    left:220px;
+    color:rgb(0, 255, 0)
+}
+.poeni{
+    font-size:20px;
+    position: absolute;
+    top:60px;
+    display:none;
+    left:220px;
+    color:rgb(0, 255, 0)
+}

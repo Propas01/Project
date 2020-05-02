@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>PROPAS</title>
+<link href="ALEKSA.css"rel="stylesheet">
+<link href="Materijali/ikonica.png" rel="shortcut icon">
+</head>
+<body >
+
+    <header>
+        <div class="header">
+        <div onclick="toggleMenu()" class="button" ></div>
+        <p  class="naslov">propas</p>
+        <img  title="Don't hover me pussy" src="Materijali/robotic.png" alt="Robotic">
+        </div>
+    </header>
+<div id="home-page" class="inline">
+    <div class="toggle-menu">
+
+        <a style="color:black" href="index.html">
+        <div  class="slicica1">
+        <div class="inline">
+        <img title="Home page" id="slika1" src="Materijali/1.png" alt="kucica">
+        <p class="text1 hide">Home</p>
+        </div>
+       </div>
+       </a>
+
+        <a style="color:black"  href="games.html" >
+        <div class="slicica1">
+            <div class="inline">
+            <img title="Games" id="slika1" src="Materijali/2.png" alt="games">
+            <p class="text2 hide">Games</p>
+        </div>
+        </div>
+        </a>
+
+        <a href="quiz.html" style="color:black">
+        <div class="slicica1">
+            <div class="inline">
+            <img title="Quiz" id="slika1" src="Materijali/3.png"
+            alt="qiuz">
+            <p class="text3 hide">Quizzes</p>
+        </div>
+        </div>
+        </a>
+
+        <a  href="clock.html" style="color:black">
+        <div class="slicica1">
+            <div class="inline">
+            <img title="Clock" id="slika1" src="Materijali/4.png" alt="clock">
+            <p class="text4 hide">Clock</p>
+            </div>
+         </div>
+        </a>
+
+         <a  href="calc.html" style="color:black">
+         <div  class="slicica1">
+            <div class="inline">
+            <img title="Calculator" id="slika1" src="Materijali/5.png">
+            <p class="text5 hide">Calculator</p>
+            </div>
+         </div>
+        </a>
+
+        <a href="converter.html" style="color:black">
+        <div class="slicica1">
+            <div class="inline">
+             <img title="Converter" id="slika1" src="Materijali/6.png">
+             <p class="text6 hide">Counter</p>
+             </div>
+        </div>
+        </a>
+
+        <a href="gallery.html" style="color:black">
+        <div class="slicica1">
+            <div class="inline">
+            <img title="Gallery" id="slika1" src="Materijali/7.png">
+            <p class="text7 hide">Gallery</p>
+            </div>
+        </div>
+        </a>
+
+        <a style="color:black">
+        <div class="slicica1">
+            <div class="inline">
+            <img title="Gallery" id="slika1" src="Materijali/7.png">
+            <p class="text8 hide">Gallery</p>
+            </div>
+        </div>
+        </a>
+
+        <a style="color:black">
+        <div class="slicica1">
+            <div class="inline">
+            <img title="Gallery" id="slika1" src="Materijali/7.png">
+            <p class="text9 hide">Gallery</p>
+            </div>
+            </div>
+        </div>
+        </a>
+
+    <div id="body-bar" class="body-bar">
+        <h2 class="podnaslov"></h2>
+        <div class="divcic">
+          <div>
+            <button class="btn1" style="background-color:Cyan;width:50px;height:30px;margin-left:71.66px;margin-top:10px;cursor:not-allowed" type="button">button1</button>
+            <button class="btn2"  style="cursor:not-allowed;background-color:blue;width:50px;height:30px;margin-left:71.66px;margin-top:10px" type="button">button2</button>
+            <button class="btn3"  style="cursor:not-allowed;background-color:gold;width:50px;height:30px;margin-left:71.66px;margin-top:10px" type="button">button3</button>
+            <button class="btn4"  style="cursor:not-allowed;background-color:purple;width:50px;height:30px;margin-left:71.66px;margin-top:10px" type="button">button4</button>
+            <button class="btn5"  style="cursor:not-allowed;background-color:yellowgreen;width:50px;height:30px;margin-left:71.66px;margin-top:10px" type="button">button5</button>
+          </div>
+          <div>
+              <h3 style="text-align: center; padding-top:5px;color:#5F9EA0;font-weight:300">Igraj se malo</h3>
+                  <p style="position: absolute;left:5px;top:32px">Promeni borduru</p>
+            <select style="position:absolute;left:5px;top:55px;cursor:pointer" onchange="changeBorderColor(this)">
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <option value="orange">Orange</option>
+                <option value="random">Random</option>
+                <option value="reset">Reset</option>
+            </select>
+            <p style="position:absolute;left:310px;top:32px">Promeni boje</p>
+            <select style="position:absolute;left:310px;top:55px;cursor:pointer" onchange="changeHueRotate(this)">
+                <option value="0">0deg</option>
+                <option value="1">45deg</option>
+                <option value="2">90deg</option>
+                <option value="3">135deg</option>
+                <option value="4">180deg</option>
+                <option value="5">270deg</option>
+            </select>
+            <p style="position: absolute;right:5px;top:32px";>Promeni zamagljenost</p>
+            <input onchange="changeBLur(this)" style="position:absolute;right:5px;top:55px;cursor:pointer" type="range" min="0" max="6" value="0" class="slider" id="myRange">
+               <img class="slika" src="Materijali/spiderman.jpg" alt="nes">
+        </div>
+          <div >
+              <input onchange="changeButtonColor(this)" id="slider1" type="range" min="0" max="6" value="3">
+        </div>
+        </div>
+
+        <button type="button" class="menjaj" onclick="menjajMe()">Menjaj me</button>
+        <div class="color"  onclick="menjajMe()"></div>
+        
+        <div class="counter">
+            <p class="counter-text">COUNTER:<br><br>0</p>
+            <button type="button" onclick="addition(`+`)" class="add">+</button>
+            <button type="button" onclick="addition(`-`)" class="sub">-</button>
+        </div>
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="ALEKSA.js"></script>
+</body>
+
+</html>

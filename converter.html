@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>PROPAS</title>
+<link href="converter.css"rel="stylesheet">
+<link href="Materijali/ikonica.png" rel="shortcut icon">
+</head>
+<body >
+
+    <header>
+        <div class="header">
+        <div onclick="toggleMenu()" class="button" ></div>
+        <p  class="naslov">propas</p>
+        <img  title="Don't hover me pussy" src="Materijali/robotic.png" alt="Robotic">
+        </div>
+    </header>
+<div id="home-page" class="inline">
+    <div class="toggle-menu">
+
+        <a style="color:black" href="index.html">
+        <div  class="slicica1">
+        <div class="inline">
+        <img title="Home page" id="slika1" src="Materijali/1.png" alt="kucica">
+        <p class="text1 hide">Home</p>
+        </div>
+       </div>
+       </a>
+
+        <a style="color:black"  href="games.html" >
+        <div class="slicica1">
+            <div class="inline">
+            <img title="Games" id="slika1" src="Materijali/2.png" alt="games">
+            <p class="text2 hide">Games</p>
+        </div>
+        </div>
+        </a>
+
+        <a  href="quiz.html" style="color:black">
+        <div class="slicica1">
+            <div class="inline">
+            <img title="Quiz" id="slika1" src="Materijali/3.png"
+            alt="qiuz">
+            <p class="text3 hide">Quizzes</p>
+        </div>
+        </div>
+        </a>
+
+        <a  href="clock.html" style="color:black">
+        <div class="slicica1">
+            <div class="inline">
+            <img title="Clock" id="slika1" src="Materijali/4.png" alt="clock">
+            <p class="text4 hide">Clock</p>
+            </div>
+         </div>
+        </a>
+
+         <a  href="calc.html" style="color:black">
+         <div  class="slicica1">
+            <div class="inline">
+            <img title="Calculator" id="slika1" src="Materijali/5.png">
+            <p class="text5 hide">Calculator</p>
+            </div>
+         </div>
+        </a>
+
+        <a href="converter.html"style="color:black">
+        <div class="slicica1">
+            <div class="inline">
+             <img title="Converter" id="slika1" src="Materijali/6.png">
+             <p class="text6 hide">Counter</p>
+             </div>
+        </div>
+        </a>
+
+        <a href="gallery.html" style="color:black">
+        <div class="slicica1">
+            <div class="inline">
+            <img title="Gallery" id="slika1" src="Materijali/7.png">
+            <p class="text7 hide">Gallery</p>
+            </div>
+        </div>
+        </a>
+
+        <a style="color:black">
+        <div class="slicica1">
+            <div class="inline">
+            <img title="Gallery" id="slika1" src="Materijali/7.png">
+            <p class="text8 hide">Gallery</p>
+            </div>
+        </div>
+        </a>
+
+        <a style="color:black">
+        <div class="slicica1">
+            <div class="inline">
+            <img title="Gallery" id="slika1" src="Materijali/7.png">
+            <p class="text9 hide">Gallery</p>
+            </div>
+            </div>
+        </div>
+        </a>
+<div class="body-bar">
+ <div class="pre-convert"><span>Convert</span>
+<select id="select1">
+     <option value="cirilica">ćirilica</option>
+     <option value="latinica">latinica</option>
+ </select>
+<span>to</span>
+<select id="select2">
+    <option value="latinica">latinica</option>
+    <option value="cirilica">ćirilica</option>
+    
+</select>
+</div>
+<div class="convert">
+   <textarea class="tekst" type="text"></textarea>
+   <textarea disabled class="prevod"></textarea>
+
+</div>
+ <button onclick="convert()" class="dugme">CONVERT</button>
+
+ <textarea  onkeyup="convert2()" placeholder="INPUT" class="input"></textarea>
+
+<select onclick="convert1()"id="options">
+    <option  value="uppercase">UPPERCASE</option>
+    <option  value="lowercase">LOWERCASE</option>
+    <option  value="reverse">REVERSE</option>
+    <option  value="morse">MORSE</option>
+</select>
+
+<textarea disabled placeholder="OUTPUT" class="output"></textarea>
+<div class="style">
+    <div onclick="fontFun('1')" class="style-type">Bold</div>
+    <div onclick="fontFun('2')" class="style-type">Italic</div>
+    <div onclick="fontFun('3')" class="style-type">Underline</div>
+    <div onclick="fontFun('4')" class="style-type">Strikethrough</div>
+    <div onclick="fontFun('5')" class="style-type">Font-size 24px</div>
+    <div onclick="fontFun('6')" class="style-type">Red color</div>
+    <div onclick="fontFun('7')" class="style-type">Reset</div>
+</div>
+</div>
+
+<script src="converter.js"></script>
+</body>
+
+</html>

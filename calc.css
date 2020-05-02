@@ -1,0 +1,349 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box; /*removes bottom scroll bar*/
+    
+    
+}
+body{
+    overflow-x: hidden
+}
+
+.header{
+    width:100vw;
+    height:60px;
+    
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    background:linear-gradient(to top, rgba(32, 52, 99, 0.699), rgb(66, 134, 244));
+    position: realtive
+
+}
+.naslov{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:30px;
+    text-transform:uppercase;
+    letter-spacing:100px;
+    font-weight: 300;
+    color:whitesmoke;
+    text-shadow:2px 2px 8px rgb(53, 4, 116)
+
+}
+.header .button{
+margin-left:0px;
+width:40px;
+height:40px;
+border-radius:50%;
+position:fixed;
+left:15px;
+background-image: url(Materijali/menu.png);
+background-size:cover;
+background-repeat: no-repeat;
+background-position: center;
+cursor:pointer;
+transition: 0.35s ease-out;
+position: absolute
+
+
+}
+.header .button:hover{
+   opacity:0.6;
+   transform: scale(1.1,1.1);
+   transition: 0.35s ease-out;
+}
+.header img{
+    position:fixed;
+    right:25px;
+    width:45px;
+    height:52px;
+    cursor:not-allowed;
+    position: absolute
+
+}
+.header img:hover{
+   transform:scale(1.1,1.1)
+
+}
+.toggle-menu{
+    display:block;
+    width: 70px;
+    height:100vh;
+    border-right:0.9px solid rgb(237, 227, 247);
+    position: relative;
+    background-color:rgb(247, 239, 239);
+    transition: 1.3s width
+
+}
+.slicica1{
+
+    height:70px;
+    cursor:pointer
+}
+.slicica1:hover{
+    opacity:0.8
+}
+.slicica1 img{
+    position: absolute;
+    transform:translateX(-50%);
+    left:35px;
+    padding-top:10px;
+    width:45px;
+    height:50px;
+    cursor:pointer;
+    transition: 0.35s ease-out;
+}
+.slicica1 img:hover{
+   opacity:0.25;
+   transition: 0.35s ease-out;
+
+}
+.toggle-menu1{
+        display:block;
+        width: 190px;
+        height:100vh;
+        border-right:0.9px solid rgb(237, 227, 247);
+        position: relative;
+        background-color:rgb(247, 239, 239);
+        transition:0.1s width  ;
+}
+.inline{
+    position:relative;
+    display: flex
+}
+.text1,
+.text2,
+.text3,
+.text4,
+.text5,
+.text6,
+.text7,
+.text8,
+.text9{
+position:absolute;
+left:80px;
+top:20px;
+font-size:18px;
+
+}
+.hide{
+    display:none;
+}
+.body-bar{
+    background:linear-gradient(to left, rgba(139, 96, 218, 0.822), rgb(46, 191, 145));
+    width:100vw;
+    border:1px solid rgb(172, 170, 170);
+    height:100vh;
+}
+
+.cell{
+    font-size:25px;
+    padding-top:17.5px;
+    text-align:center;
+    border-radius:4px;
+    background-color:rgba(177, 0, 162, 0.849);
+    cursor:pointer
+}
+.cell:hover{
+    opacity:0.6;
+    background-color:rgb(25, 0, 255)
+    
+}
+
+.cell13{
+    grid-area:trinaest
+}
+.cell14{
+    grid-area:cetrnaest
+}
+.cell15{ 
+    grid-area:petnaest
+}
+.cell16{
+    grid-area:sesnaest;
+    padding-top:52.5px
+}
+.cell17{
+    grid-area:sedamnaest
+}
+.cell18{ 
+    grid-area:osamnaest
+}
+.cell7{
+    grid-area:sedam
+}
+.cell8{
+    grid-area:osam
+}
+.cell9{ 
+    grid-area:devet
+}
+.cell10{
+    grid-area:deset
+}
+.cell11{
+    grid-area:jedanaest
+}
+.cell12{ 
+    grid-area:dvanaest
+}
+.cell1{
+    grid-area:jedan
+}
+.cell2{
+    grid-area:dva
+}
+.cell2{ 
+    grid-area:tri
+}
+.cell4{
+    grid-area:cetiri
+}
+.cell5{
+    grid-area:pet
+}
+.cell6{ 
+    grid-area:sest;
+   
+}
+
+.calculator{
+    position:absolute;
+    left:43%;
+    top:20%;
+    width:270px;
+	height:340px;
+    display: grid;
+    
+   grid-gap:7px;
+   grid-template-columns:"60px 60px 60px 60px";
+   grid-template-rows:"60px 60px 60px 60px 60px";
+   grid-template-areas:"jedan       dva        tri        cetiri"
+                       "pet         sest       sedam      osam"
+                       "devet       deset      jedanaest  dvanaest"
+                       "trinaest    cetrnaest  petnaest   sesnaest"
+                       "sedamnaest  sedamnaest  osamnaest sesnaest"
+}
+
+
+.text_1{
+    color:darkgrey;
+    font-size:18px;
+    font-weight: 400;
+    width:269px;
+    height:37px;
+    position: absolute;
+    left:43%;
+    top:12.5%;
+    box-shadow: 6px 6px 8px #5F9EA0;
+    text-shadow:0.2px 0px #5F9EA0;
+}
+.cell01{
+    grid-area:aleksa1
+}
+.cell02{
+    grid-area:aleksa2 
+}
+.cell03{
+    grid-area:aleksa3
+}
+.cell04{
+    grid-area:aleksa4
+}
+.cell05{
+    grid-area:aleksa5
+}
+.cell06{
+    grid-area:aleksa6
+}
+.cell07{
+    grid-area:aleksa7
+}
+.cell08{
+    grid-area:aleksa8
+}
+.cell09{
+    grid-area:aleksa9
+}
+.cell010{
+    grid-area:aleksa10
+}
+.cell011{
+    grid-area:aleksa11
+}
+.cell012{
+    grid-area:aleksa12
+}
+.cell0{
+    font-size:25px;
+    padding-top:17.5px;
+    text-align:center;
+    border-radius:4px;
+    background-color:rgba(177, 0, 162, 0.849);
+    cursor:pointer;
+    
+}
+.cell0:hover{
+    opacity:0.6;
+    background-color:rgb(25, 0, 255)
+    
+}
+.calculator1{
+    position:absolute;
+    left:27%;
+    top:20%;
+    width:210px;
+	height:270px;
+    display: grid;
+    
+   grid-gap:7px;
+   grid-template-columns:"60px 60px 60px ";
+   grid-template-rows:"60px 60px 60px 60px ";
+   grid-template-areas:"aleksa1  aleksa2  aleksa3"
+                       "aleksa4  aleksa5  aleksa6"    
+                       "aleksa7  aleksa8  aleksa9" 
+                       "aleksa10 aleksa11 aleksa12"    
+}  
+.button1{
+    position: absolute;
+    top:66%;
+    left:64%;
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    background:rgb(16, 177, 43);
+    cursor:pointer;
+    
+
+}
+.button1:hover{
+    opacity:0.4
+}
+.span{
+    font-size:50px;
+    color:white;
+    font-weight: bold;
+    position: absolute;
+    top:-10px;
+    left:6px
+}
+.span1{
+    font-size:50px;
+    color:white;
+    font-weight: bold;
+    position: absolute;
+    top:-13px;
+    left:12px
+}
+.text_2{
+    color:darkgrey;
+    font-size:18px;
+    font-weight: 400;
+    width:484px;
+    height:37px;
+    position: absolute;
+    left:27%;
+    top:12.5%;
+    box-shadow: 6px 6px 8px #5F9EA0;
+    text-shadow:0.2px 0px #5F9EA0;
+}
